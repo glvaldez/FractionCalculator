@@ -46,7 +46,6 @@ public class Fraction {
 
 	public void stringToFraction(String w, String n, String d) {
 		try {
-
 			if ((w.length() == 0 || w == "0")) {
 				this.wholeNum = 0;
 				this.numerator = Integer.parseInt(n);
@@ -64,7 +63,6 @@ public class Fraction {
 	}
 	
 	public static boolean checkErrors(String w, String n, String d, String operation) {
-
 		if (n.length() == 0 || d.length() == 0) {
 			GUIFrame.Console.setText(Messages.NUM_DEN);
 			return true;
@@ -75,7 +73,6 @@ public class Fraction {
 			GUIFrame.Console.setText("");
 			return false;
 		}
-
 	}
 
 	public static boolean isInt(String s) {
@@ -86,7 +83,6 @@ public class Fraction {
 			int i = Integer.parseInt(s);
 			return true;
 		}
-
 		catch (NumberFormatException er) {
 			return false;
 		}
